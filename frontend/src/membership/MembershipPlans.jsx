@@ -38,7 +38,7 @@ const PaymentPage = () => {
 
       // Create order on the server
       const { data } = await axios.post(
-        'https://gymwebsite-is32.onrender.com//api/payment/create-order',
+        'https://gymwebsite-is32.onrender.com/api/payment/create-order',
         { planId: selectedPlan.id, userId }, // Pass userId in the request body
         { withCredentials: true } // Include credentials (cookies)
       );
@@ -55,7 +55,7 @@ const PaymentPage = () => {
         handler: async function (response) {
           // Verify payment on the server
           const verifyResponse = await axios.post(
-            'https://gymwebsite-is32.onrender.com//api/payment/verify-payment',
+            'https://gymwebsite-is32.onrender.com/api/payment/verify-payment',
             {
               order_id: response.razorpay_order_id,
               payment_id: response.razorpay_payment_id,

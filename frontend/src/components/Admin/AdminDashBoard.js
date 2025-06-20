@@ -24,7 +24,7 @@ const AdminDashboard = () => {
     const fetchUserDetails = async (userId) => {
         try {
             const token = localStorage.getItem("token");
-            const response = await axios.get(`https://gymwebsite-is32.onrender.com//api/user/${userId}`, {
+            const response = await axios.get(`https://gymwebsite-is32.onrender.com/api/user/${userId}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setSelectedUser(response.data.user); // Set selected user details

@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
   const handlelogout = () => {
-    const response = axios.post("https://gymwebsite-is32.onrender.com//api/user/logout", {
+    const response = axios.post("https://gymwebsite-is32.onrender.com/api/user/logout", {
       withCredentials: true
     }).then((response) => {
       console.log(response.data)
