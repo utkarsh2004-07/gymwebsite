@@ -33,7 +33,7 @@ const Signup = () => {
 
     if (errors.length === 0 && password === confirmPassword) {
       try {
-        const response = await axios.post('https://gymwebsite-is32.onrender.com//api/user/signup', {
+        const response = await axios.post('https://gymwebsite-is32.onrender.com/api/user/signup', {
           email,
           name,
           password,
