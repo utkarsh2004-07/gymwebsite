@@ -64,7 +64,7 @@ const Signup = () => {
   const handleVerifyOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https:/gymwebsite-is32.onrender.com//api/user/verify', { userId, otp });
+      const response = await axios.post('https:/gymwebsite-is32.onrender.com/api/user/verify', { userId, otp });
       setMessage(response.data.message);
       setError('');
       toast.success('OTP Verified! You are now logged in.', { autoClose: 3000 });
