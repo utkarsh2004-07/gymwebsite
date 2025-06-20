@@ -29,7 +29,7 @@ const MealPlanner = () => {
 
     const fetchExistingPlans = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/diet/getDietPlan/${userId}`);
+            const response = await axios.get(`https://gymwebsite-is32.onrender.com//api/diet/getDietPlan/${userId}`);
             setPlans(response.data.dietPlans);
         } catch (error) {
             setError('Failed to fetch existing plans');
@@ -49,7 +49,7 @@ const MealPlanner = () => {
                 return;
             }
 
-            const response = await axios.post('http://localhost:5000/api/diet/generate', {
+            const response = await axios.post('https://gymwebsite-is32.onrender.com//api/diet/generate', {
                 userId,
                 ...formData
             });

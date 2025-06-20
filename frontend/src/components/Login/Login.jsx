@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/user/login', { email, password }, {
+            const response = await axios.post('https://gymwebsite-is32.onrender.com//api/user/login', { email, password }, {
                 withCredentials: true
             });
 

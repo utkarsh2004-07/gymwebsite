@@ -14,7 +14,7 @@ const WorkoutPage = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/work/workout', {
+            const response = await axios.post('https://gymwebsite-is32.onrender.com//api/work/workout', {
                 userId,
                 workoutType,
                 duration,
