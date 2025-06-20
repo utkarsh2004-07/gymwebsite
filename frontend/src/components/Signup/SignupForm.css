@@ -1,0 +1,112 @@
+/* Add this to your SignupForm.css file */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url('/public/assest/pexels-leonardho-1552242.jpg') no-repeat center center fixed; */
+    backdrop-filter: blur;
+    background-size: cover;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Very transparent background */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    /* Applies the blur effect to the background */
+    -webkit-backdrop-filter: blur(20px);
+    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Slight border to enhance glass effect */
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: #fff; */
+    /* Light color for readability against the glassmorphism background */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* color: #fff; */
+    /* Light color for labels */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Transparent border */
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Slightly transparent background for input fields */
+    /* color: #fff; */
+    /* Light color for text */
+}
+
+.password-requirements {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.password-requirements p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.password-requirements i {
+    margin-right: 8px;
+}
+
+.valid {
+    color: #00ff00;
+    /* Light green for valid */
+}
+
+.invalid {
+    color: #928888;
+    /* Light red for invalid */
+}
+
+.error {
+    color: #a49494;
+    /* Light red for error messages */
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

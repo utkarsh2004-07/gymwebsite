@@ -1,0 +1,10 @@
+/* Boyfrontpart.css */
+.body-map__muscle {
+    background-color: red;
+
+}
+
+.body-map__muscle:hover {
+    fill: pink;
+
+}
