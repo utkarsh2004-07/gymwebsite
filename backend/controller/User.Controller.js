@@ -94,7 +94,10 @@ export const Login = async (req, res) => {
             //     maxAge: 2 * 60 * 60 * 1000, // Set cookie expiry time to 2 hours
             // });
             // console.log("Setting token cookie:", token);
-            res.cookie("token", token, {});
+            res.cookie("token", token, {
+                httpOnly: true,
+                secure: true
+            });
 
 
             res.status(200).json({
