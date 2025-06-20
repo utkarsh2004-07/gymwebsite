@@ -98,6 +98,7 @@ export const Login = async (req, res) => {
     httpOnly: true,
     secure: true,
     sameSite: "None", 
+                maxAge: 24 * 60 * 60 * 1000
    
 });
 
@@ -124,8 +125,11 @@ export const Login = async (req, res) => {
 
 export const logout = async (req, res) => {
     try {
-        res.clearCookie("token");
-        // const token = res.cookie(null)
+       res.clearCookie("token", {
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+});
         res.status(200).json({
             message: "logout Successfull"
         })
